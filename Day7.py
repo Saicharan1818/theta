@@ -15,7 +15,7 @@ square(10)
 for i in square(10):
     print(i)
 
-#DECORATOR
+''''#DECORATOR using other function code into our code'''
 
 def dev_dec(func):
     def inner(a,b):
