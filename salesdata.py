@@ -1,4 +1,4 @@
-##MERING DATA
+#MERGING DATA
 
 import pandas as pd
 
