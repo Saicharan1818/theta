@@ -18,10 +18,14 @@ upper_bound = Q3 + 1.5 * IQR
 
 outliers = data[(data['value'] < lower_bound) | (data['value'] > upper_bound)]
 
-print(f"Outliers ")
+print(f"Outliers based on Box Plot criteria:\n {outliers}")
 
+plt.figure(figsize=(12, 6))
 
+plt.subplot(1, 2, 1)
 
+sns.boxplot(x=data['value'])
+plt.title('Box Plot')
 
 
 plt.show()
